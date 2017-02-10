@@ -278,7 +278,7 @@ class ParseServer {
     return ParseServer.app(this.config);
   }
 
-  static app({maxUploadSize = '20mb', appId}) {
+  static app({maxUploadSize = '100mb', appId}) {
     // This app serves the Parse API directly.
     // It's the equivalent of https://api.parse.com/1 in the hosted Parse API.
     var api = express();
